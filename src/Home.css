@@ -1,0 +1,33 @@
+.Home{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+.card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:20px;
+    width: 140px;
+    }
+    .card-container img{
+    background: lightgrey;
+    border-radius: 8px;
+    }
+    .pokemon-name{
+        font-size: 18px;
+    margin: 10px 0px;
+    color:black;
+    text-align:center;
+    }
+    h1{
+        text-align: center;
+        margin: 40px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .card-container{
+            width: 100%;
+        }
+    }
