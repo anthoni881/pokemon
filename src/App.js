@@ -10,15 +10,15 @@ const App = () => {
   return (
     <div className="App">
       <BrowserRouter>
-      <Route exact path="/">
-      <Home setDetail={setDetail} data={data} setData={setData}></Home>
-      </Route>
-      <Route path="/pick">
-      <Pick Detail={detail}></Pick>
-      </Route>
-      <Route path="/battle">
-      <Battle></Battle>
-      </Route>
+        <Route exact path={"/"} component ={Home}>
+          <Home setDetail={setDetail} data={data} setData={setData}></Home>
+        </Route>
+        <Route path={"/pick"} component={Pick}>
+          <Pick Detail={detail}></Pick>
+        </Route>
+        <Route path={"/battle"} component={Battle}>
+          <Battle/>
+        </Route>
       </BrowserRouter>
     </div>
   );
