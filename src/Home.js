@@ -40,6 +40,7 @@ const Home = ({ setDetail }) => {
   return (
       <div>
           <h1>Pokédex</h1>
+          <h3>Select your Pokemon to see statistics or start battles with random Pokemon, have fun!</h3>
     <div className="Home">
       {data.map((el, i) => (
           <div ref={lastElementRef} className="card-container" onClick={()=>handleChoose(i+1)}>
