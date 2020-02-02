@@ -35,6 +35,7 @@ const Home = ({ setDetail }) => {
   
     const handleChoose = async e => {
       const detail = await axios.get(`https://pokeapi.co/api/v2/pokemon/${e}`);
+      console.log(detail.data)
       await setDetail(detail.data);
     };
   return (

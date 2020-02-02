@@ -74,7 +74,7 @@ const Battle=()=>{
             }</div>
         {hide?
             ""
-            :<div className="search-enemy" onClick={handleSearch}>Searching For Enemy</div>
+            :<div className="search-enemy" onClick={handleSearch}>Click for find Enemy!</div>
         }
         {showBattle?
         <div className="start-battle" onClick={StartBattle}>Start The Battle</div>:""
